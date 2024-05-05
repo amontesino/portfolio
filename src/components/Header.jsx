@@ -6,18 +6,22 @@ export default function Header() {
         <header className="header">
             <Link className="header-name" to="/">A. Montesino</Link>
             <nav>
+                {/* Figure out how to transition between NavLinks */}
                 <NavLink
+                    className="header-link"
                     to="portfolio"
                     // style={({ isActive }) => isActive ? activeStyles : null}
                 >
                     Portfolio
                 </NavLink>
                 <NavLink
+                    className="header-link"
                     to="about"
                 >
                     About
                 </NavLink>
                 <NavLink
+                    className="header-link"
                     to="contact"
                 >
                     Contact

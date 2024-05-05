@@ -1,5 +1,47 @@
 body,
 html {
   margin: 0;
-  padding: 0
+  padding: 0;
+  font-family: "Radio Canada Big", sans-serif;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  height: 5em;
+  background: rgb(74, 0, 97);
+  align-items: center;
+  padding: 0 1em;
+}
+
+.header-name {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.header-link {
+  padding-left: 0.5em;
+}
+
+.header-name,
+.header-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.header-name:hover,
+.header-link:hover {
+  color: gray;
+  transition: color 1s;
+}
+
+/* Footer */
+
+.footer {
+  display: fixed;
+  top: 0;
+  height: 2em;
 }

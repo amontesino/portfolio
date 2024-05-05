@@ -8,8 +8,6 @@ import Portfolio from './pages/Portfolio'
 import Layout from './components/Layout'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <BrowserRouter>
       <Routes>
