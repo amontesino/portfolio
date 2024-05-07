@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function About() {
     return (
-        <h1>About page</h1>
+        <>
+            <section className="page-section">
+                <h1 className="page-head">About</h1>
+            </section>
+        </>
     )
 }

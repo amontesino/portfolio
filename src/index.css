@@ -3,14 +3,20 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Radio Canada Big", sans-serif;
+  background: #2a1c51;
+  color: #fff;
 }
 
 /* Header */
 
 .header {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 5em;
-  background: rgb(74, 0, 97);
+  background: #4a0061;
   align-items: center;
   padding: 0 1em;
 }
@@ -34,14 +40,43 @@ html {
 
 .header-name:hover,
 .header-link:hover {
-  color: gray;
+  color: #cfbae0;
   transition: color 1s;
 }
 
 /* Footer */
 
 .footer {
-  display: fixed;
-  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 1em;
   height: 2em;
+  background: #7329a4;
+}
+
+.footer img {
+  height: 1em;
+}
+
+/* General page stylings */
+
+.page-section {
+  padding-top: 3.7em;
+}
+
+.page-head {
+  position: relative;
+  background: #CFBAE0;
+  padding: 0.5em;
+  color: #1e1a29;
+  width: auto;
+}
+
+@media (min-width: 767px) {
+
 }
