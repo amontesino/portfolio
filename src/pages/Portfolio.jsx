@@ -1,4 +1,5 @@
 import React from 'react'
+import MovieWatchlist from '../components/scrimbaprojs/movie-watchlist/MovieWatchlist'
 
 export default function Portfolio() {
     return (
