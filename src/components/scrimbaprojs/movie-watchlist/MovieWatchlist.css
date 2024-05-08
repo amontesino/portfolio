@@ -1,0 +1,169 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: #1C1C1C;
+    color: #fff;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Header */
+
+header {
+    display: flex;
+    background: url("images/header.png");
+    width: 34.375em;
+    height: 13em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Search bar/button*/
+
+#search {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 12em;
+}
+
+#movie-search,
+#search-button {
+    border: 0;
+    font-family: "Inter", sans-serif;
+    padding: 0.75em 3em;
+}
+
+#movie-search {
+    border-radius: 6px 0 0 6px;
+    background: #2E2E2F;
+    color: #A5A5A5;
+}
+
+#search-button {
+    border-radius: 0 6px 6px 0;
+    background: #4B4B4B;
+    color: #fff;
+}
+
+/* Main (search results + watchlist) */
+
+main {
+    background: #121212;
+    height: 35.688em;
+    width: 34.375em;
+    overflow: scroll;
+}
+
+#movie-container {
+    display: flex;
+    height: 6.25em;
+    padding: 2.75em;
+}
+
+#movie-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.313em;
+    margin: -5px;
+    line-height: 1em;
+}
+
+#movie-info h3 {
+    font-size: 1.125em;
+    padding-right: 0.5em;
+}
+
+#empty-search {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    align-items:center;
+    color: #2E2E2F;
+    text-align: center;
+}
+
+#empty-search h3 {
+    margin-top: 0.125em;
+}
+
+#top-row,
+#bottom-row {
+    display: flex;
+    height: 2em;
+}
+
+#bottom-row {
+    font-size: 0.75em;
+}
+
+#movie-info img,
+.add-to-watchlist img {
+    height: 1em;
+    width: 1em;
+}
+
+#movie-info img {
+    align-self: last baseline;
+}
+
+.add-to-watchlist img {
+    align-self: center;
+}
+
+.add-to-watchlist p {
+    color: #fff;
+}
+
+.plot {
+    color: #A5A5A5;
+    font-size: 0.875em;
+    font-weight: 400;
+}
+
+.detail {
+    padding-right: 1em;
+    border: 0;
+}
+
+.poster {
+    width: 6.188em;
+    height: 9.213em;
+}
+
+.rating {
+    line-height: -1;
+    padding-left: 0.5em;
+}
+
+hr {
+    border-color: 1.5px solid #2c2c2c;
+    width: 28.813em;
+    background: transparent
+}
+
+.add-to-watchlist {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+}
+
+/* General stylings */
+
+a,
+a:hover,
+a:link,
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
