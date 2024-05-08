@@ -4,15 +4,15 @@ import { NavLink } from 'react-router-dom'
 export default function About() {
     return (
         <>
-            <section className="page-section">
+            <main className="page-section">
                 <h1 className="page-head">About</h1>
                 <h2>Who am I?</h2>
                 <p>I'm <span className="strong">Armando Montesino.</span> I am a frontend developer with over a year of academic and amateur experience after leaving behind my Communications degrees. If you're looking to help me add "professional" to that list of adjectives,
-                    <NavLink 
+                     <NavLink 
                         className="paragraph-link"
                         to="../contact"
                     >
-                        let's talk.!
+                        let's talk!
                     </NavLink>
                 </p>
                 <h2>Why webdev after communications degrees?</h2>
@@ -31,8 +31,9 @@ export default function About() {
                     <li>Responsive Design</li>
                     <li>Accessibility</li>
                     <li>GitHub & general version control</li>
+                    <li>Optimizing performance</li>
                 </ul>
-            </section>
+            </main>
         </>
     )
 }
