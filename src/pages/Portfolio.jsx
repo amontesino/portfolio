@@ -1,8 +1,12 @@
 import React from 'react'
 import { scrimProjList, smallProjList } from '../utils/portfolioList'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
+
 
 export default function Portfolio() {
+    const { search } = useLocation()
+    const small = new URLSearchParams(search).get('small')
+
     return (
         <>
             <main className="page-section">
@@ -16,14 +20,14 @@ export default function Portfolio() {
                     -Movie Watchlist
                     -Restaurant Ordering-App
                     -Travel Journal */}
-                <div className="portfolio-nav">
+                <div className={'portfolio-nav'}>
                     {scrimProjList.map(proj => {
-                        return <NavLink
+                        return <Link
                             className="portfolio-navlink"
                             to={`../${proj.pathName}`}
                         >
                             {proj.name}
-                        </NavLink>
+                        </Link>
                     })}
                 </div>
                 <p>These were projects that I made during my time in the <a href="https://scrimba.com">Scrimba bootcamp.</a> I highly recommend the service, you don't just get a balanced curriculum of HTML, CSS, JS and React, but you also get access to a wonderful community of fellow students and supportive leadership. The projects listed speak to both my skills as a developer and the quality of the Scrimba course material.</p>
@@ -35,8 +39,10 @@ export default function Portfolio() {
                 <div className="portfolio-nav">
                     {smallProjList.map(proj => {
                         return <NavLink
-                            className="portfolio-navlink"
-                            to={`small:${proj.queryName}`}
+                            className={`portfolio-navlink
+                                ${isActive && small === proj.queryName ? 'active' : ''}`}
+                            to={`?small=${proj.queryName}`}
+                            end
                         >
                             {proj.name}
                         </NavLink>
