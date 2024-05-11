@@ -95,6 +95,34 @@ html {
   width: auto;
 }
 
+.portfolio-nav {
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background: #CFBAE0;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.portfolio-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio-navlink {
+  padding-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e1a29;
+  transition: color 1s;
+}
+
+.portfolio-navlink:hover,
+.portfolio-navlink:active {
+  color: #433a5c;
+}
+
 @media (min-width: 767px) {
 
 }
