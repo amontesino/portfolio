@@ -39,8 +39,7 @@ export default function Portfolio() {
                 <div className="portfolio-nav">
                     {smallProjList.map(proj => {
                         return <NavLink
-                            className={`portfolio-navlink
-                                ${isActive && small === proj.queryName ? 'active' : ''}`}
+                            className={`portfolio-navlink`}
                             to={`?small=${proj.queryName}`}
                             end
                         >
