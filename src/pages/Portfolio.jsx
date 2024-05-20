@@ -1,6 +1,6 @@
 import React from 'react'
 import { scrimProjList, smallProjList } from '../utils/portfolioList'
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 
 export default function Portfolio() {
