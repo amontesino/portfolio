@@ -24,7 +24,9 @@ export default function Portfolio() {
                     {scrimProjList.map(proj => {
                         return <Link
                             className="portfolio-navlink"
-                            to={`../${proj.pathName}`}
+                            to={proj.pathName}
+                            // to={`../${proj.pathName}`}
+                            // add back later when projects are successfully ported to React
                         >
                             {proj.name}
                         </Link>
@@ -35,13 +37,14 @@ export default function Portfolio() {
                 {/* Add the following:
                     -Password Generator
                     -Color Scheme Generator
+                    -Digital Business Card
                     -Basketball Scoreboard*/}
                 <div className="portfolio-nav">
                     {smallProjList.map(proj => {
                         return <NavLink
                             className={`portfolio-navlink`}
-                            to={`?small=${proj.queryName}`}
-                            end
+                            // to={`?small=${proj.queryName}`}
+                            to={proj.queryName}
                         >
                             {proj.name}
                         </NavLink>
