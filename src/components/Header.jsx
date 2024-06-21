@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="header">
             <Link className="header-name" to="/">A. Montesino</Link>
-            <nav>
+            <nav class="navlink-container">
                 {/* Figure out how to transition between NavLinks */}
                 <NavLink
                     className="header-link"

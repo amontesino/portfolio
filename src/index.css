@@ -123,6 +123,30 @@ html {
   color: #433a5c;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1366px) {
+  .header {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    height: auto;
+    width: 30em;
+    padding: 0;
+  }
 
+  .navlink-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-section {
+    padding: 0 0 0 30rem;
+  }
+
+  .page-head {
+    margin-top: 0;
+  }
 }
