@@ -71,19 +71,23 @@ html {
   z-index: 1;
 }
 
-a {
+.body-link {
   color: #5B9279;
   text-shadow: 0;
   text-decoration: none;
 }
 
-a:hover {
-  text-shadow: 0 1px 5px #e9d38c;
+.body-link:hover {
+  text-shadow: 0 1px 5px #8b8b8b;
   transition: text-shadow 1s;
 }
 
 .page-section {
   padding-top: 3.7em;
+}
+
+.page-section p {
+  line-height: 1.7
 }
 
 .page-section > * {
@@ -154,7 +158,12 @@ a:hover {
   }
 
   .header-name {
+    font-size: 3.5em;
     margin: 0.2em auto;
+  }
+  .header-link {
+    font-size: 1.8em;
+    margin-top: 0.5em;
   }
 
   .navlink-container {
@@ -164,6 +173,10 @@ a:hover {
 
   .page-section {
     padding: 0 0 0 30rem;
+  }
+
+  .page-section p {
+    line-height: 1
   }
 
   .page-head {
