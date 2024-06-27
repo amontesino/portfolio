@@ -3,8 +3,8 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Radio Canada Big", sans-serif;
-  background: #2a1c51;
-  color: #fff;
+  background: #12130F;
+  color: #EAE6E5;
 }
 
 /* Header */
@@ -15,7 +15,7 @@ html {
   left: 0;
   right: 0;
   height: 5em;
-  background: #4a0061;
+  background: #5a493b;
   align-items: center;
   padding: 0 1em;
   box-shadow: 0 1px 5px black;
@@ -33,14 +33,14 @@ html {
 
 .header-name,
 .header-link {
-  color: #fff;
+  color: #EAE6E5;
   text-decoration: none;
   transition: color 1s;
 }
 
 .header-name:hover,
 .header-link:hover {
-  color: #cfbae0;
+  color: #8FCB9B;
   transition: color 1s;
 }
 
@@ -55,7 +55,7 @@ html {
   left: 0;
   font-size: 1em;
   height: 2em;
-  background: #7329a4;
+  background: #5a493b;
 }
 
 .footer img {
@@ -68,6 +68,20 @@ html {
 .footer {
   position: fixed;
   z-index: 1;
+}
+
+a {
+  color: #8FCB9B;
+  text-decoration: none;
+}
+
+a:active {
+  color: #5B9279;
+}
+
+a:hover {
+  color: #5B9279;
+  transition: color 1s;
 }
 
 .page-section {
@@ -90,8 +104,8 @@ html {
   font-size: 1.8em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  background: #CFBAE0;
-  color: #1e1a29;
+  background: #5B9279;
+  color: #ffffff;
   width: auto;
 }
 
@@ -99,7 +113,7 @@ html {
   min-height: 2.5rem;
   display: flex;
   align-items: center;
-  background: #CFBAE0;
+  background: #8FCB9B;
   overflow: auto;
   white-space: nowrap;
   -ms-overflow-style: none;
@@ -111,23 +125,27 @@ html {
 }
 
 .portfolio-navlink {
-  padding-right: 1rem;
+  margin-right: 1rem;
+  padding: 0.2em 0.8em;
   text-decoration: none;
   font-weight: bold;
-  color: #1e1a29;
+  background: #1c2024;
+  border-radius: 5px;
+  width: auto;
+  color: #5B9279;
   transition: color 1s;
 }
 
 .portfolio-navlink:hover,
 .portfolio-navlink:active {
-  color: #433a5c;
+  color: #8FCB9B;
 }
 
 @media (min-width: 1366px) {
   .header {
+    text-align: center;
     position: fixed;
     flex-direction: column;
-    align-items: start;
     top: 0;
     bottom: 0;
     left: 0;
@@ -135,6 +153,10 @@ html {
     height: auto;
     width: 30em;
     padding: 0;
+  }
+
+  .header-name {
+    margin: 0.2em auto;
   }
 
   .navlink-container {
