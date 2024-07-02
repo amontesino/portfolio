@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import homeIcon from "../assets/header-icons/home.svg"
 
 export default function Header() {
     return (
         <header className="header">
-            <Link className="header-name" to="/">A. Montesino</Link>
+            <Link className="header-name" to="/">
+                <img src={homeIcon} />
+            </Link>
             <nav class="navlink-container">
                 {/* Figure out how to transition between NavLinks */}
                 <NavLink
