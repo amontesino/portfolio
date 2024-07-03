@@ -16,16 +16,26 @@ html {
   right: 0;
   height: 5em;
   background: #77685b;
+  justify-content: space-between;
   align-items: center;
   padding: 0 1em;
   box-shadow: 0 1px 5px black;
-  border-radius: 3em;
+}
+
+.header-name,
+.header-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-name {
+  font-size: 1em;
 }
 
 .header-link {
+  font-size: 1.5em;
   padding-left: 0.5em;
 }
-
 
 .header-name:hover,
 .header-link:hover {
@@ -132,10 +142,31 @@ html {
   color: #8FCB9B;
 }
 
+.rounded {
+  margin: 8px 0;
+  width: 3em;
+  border-top: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.disabled {
+  color: #d4d4d4;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  color: #d4d4d4;
+}
+
 @media (min-width: 1366px) {
   .header {
     text-align: center;
     position: fixed;
+    justify-content: start;
     flex-direction: column;
     top: 0;
     bottom: 0;
@@ -145,11 +176,21 @@ html {
     width: 6em;
     padding: 0;
     margin: 1em 1em 3em;
+    border-radius: 3em;
+  }
+
+  .header-name,
+  .header-link {
+    font-size: 2em;
+  }
+
+  .header-name {
+    padding: 0.5em 0;
   }
 
   .header-link {
-    font-size: 1.8em;
     margin-top: 0.5em;
+    padding: 0;
   }
 
   .navlink-container {
@@ -172,5 +213,13 @@ html {
 
   .portfolio-nav {
     border-radius: 5px 0 0 5px;
+  }
+
+  .mobile-hidden {
+    display: inline-block;
+  }
+
+  .desktop-hidden {
+    display: none;
   }
 }
