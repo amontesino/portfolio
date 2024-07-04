@@ -27,6 +27,7 @@ export default function Portfolio() {
                         Blockally
                     </Link>
                 </div>
+                <h3 className="disclaimer">DISCLAIMER: The below projects are hosted on separate Netlify sites, and are actively being rewritten as React apps that will be displayed/functional on this site, rather than their old Javascript versions. For the time being they will appear janky yet function as intended.</h3>
                 <h2>Scrimba projects</h2>
                 {/* Add the following:
                     -Component Library++
