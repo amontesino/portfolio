@@ -99,6 +99,8 @@ html {
   font-weight: bold;
   background: #8FCB9B;
   height: 2em;
+  max-width: 4em;
+  align-self: center;
 }
 
 /* General page stylings */
