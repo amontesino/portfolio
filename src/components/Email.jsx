@@ -22,24 +22,28 @@ export default function Email() {
     
     return (
         <form className="email-form" ref={form} onSubmit={sendEmail}>
-            <input
-                className="email-small-field"
-                type="text"
-                name="user_name"
-                placeholder="Name"
-            />
-            <input
-                className="email-small-field"
-                type="email"
-                name="user_email"
-                placeholder="Email Address"
-            />
-            <textarea
-                className="email-message"
-                name="message"
-                placeholder="Message"
-            />
-            <button className="email-send">Send</button>
+            <div className="name-and-email">
+                <input
+                    className="email-small-field"
+                    type="text"
+                    name="to_name"
+                    placeholder="Name"
+                />
+                <input
+                    className="email-small-field"
+                    type="email"
+                    name="reply_to"
+                    placeholder="Email Address"
+                />
+            </div>
+            <div className="message-and-button">
+                <textarea
+                    className="email-message"
+                    name="message"
+                    placeholder="Message"
+                />
+                <button className="email-send">Send</button>
+            </div>
         </form>
     )
 }

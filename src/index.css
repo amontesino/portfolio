@@ -82,6 +82,13 @@ html {
   gap: 1em;
 }
 
+.name-and-email,
+.message-and-button {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .email-small-field {
   height: 2em;
   font-size: 1em;
@@ -269,6 +276,19 @@ html {
 
   .portfolio-nav {
     border-radius: 5px 0 0 5px;
+  }
+
+  .email-and-info-container {
+    display: flex;
+  }
+
+  .email-form {
+    flex-direction: row;
+  }
+
+  .name-and-email {
+    justify-content: space-around;
+    min-width: auto;
   }
 
   .mobile-hidden {
