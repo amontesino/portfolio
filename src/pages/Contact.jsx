@@ -1,10 +1,34 @@
 import React from 'react'
+import Email from '../components/Email'
+import { NavLink } from 'react-router-dom'
 
 export default function Contact() {
     return (
         <>
             <main className="page-section">
                 <h1 className="page-head">Contact</h1>
+                <section className="email-and-info-container">
+                    <div className='contact-info'>
+                        <h1>Let's get in touch!</h1>
+                        <p>I'd love to hear from you, whether it's to discuss projects, collaborations, or even if you have a coding question!</p>
+                        <p>I can also be found on:</p>
+                        <div className='portf-link-container'>
+                            <NavLink
+                                className="portf-link black"
+                                to="https://www.linkedin.com/in/armandomontesino98"
+                            >
+                                LinkedIn
+                            </NavLink>
+                            <NavLink
+                                className="portf-link black"
+                                to="https://www.github.com/amontesino"
+                            >
+                                Github
+                            </NavLink>
+                        </div>
+                    </div>
+                    <Email />
+                </section>
             </main>
         </>
     )

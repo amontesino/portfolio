@@ -32,13 +32,15 @@ html {
   font-size: 1em;
 }
 
-.header-link {
+.header-link,
+.portf-link {
   font-size: 1.5em;
   padding-left: 0.5em;
 }
 
 .header-name:hover,
-.header-link:hover {
+.header-link:hover,
+.portf-link:hover {
   color: #8FCB9B;
   transition: color 1s;
 }
@@ -64,9 +66,68 @@ html {
 
 /* Home page */
 
+/* Contact page */
 
+.email-small-field,
+.email-message,
+.email-send {
+  padding: 0 0.5em;
+  font-family: "Radio Canada Big", sans-serif;
+  border: 0;
+  box-shadow: 0 1px 1px black;
+  border-radius: 10px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.name-and-email,
+.message-and-button {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.email-small-field {
+  height: 2em;
+  font-size: 1em;
+}
+
+.email-message {
+  height: 10em;
+  padding-top: 0.5em;
+  resize: none;
+}
+
+.email-send {
+  color: #151612;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: #8FCB9B;
+  height: 2em;
+  max-width: 4em;
+  align-self: center;
+}
+
+.portf-link-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: #151612;
+  margin-bottom: 2em;
+}
+
+.portf-link {
+  text-decoration: none;
+}
 
 /* General page stylings */
+
+.black {
+  color: #151612;
+}
 
 .header,
 .footer {
@@ -85,7 +146,8 @@ html {
   transition: text-shadow 1s;
 }
 
-.page-section {
+.page-section,
+.contact-page-section {
   padding-top: 3.7em;
 }
 
@@ -232,6 +294,23 @@ html {
 
   .portfolio-nav {
     border-radius: 5px 0 0 5px;
+  }
+
+  .email-and-info-container {
+    display: flex;
+  }
+
+  .contact-info {
+    flex-basis: 50%; 
+  }
+
+  .email-form {
+    width: 50%;
+  }
+
+  .name-and-email {
+    justify-content: space-around;
+    min-width: auto;
   }
 
   .mobile-hidden {
