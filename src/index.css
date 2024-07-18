@@ -125,6 +125,10 @@ html {
 
 /* General page stylings */
 
+.strong {
+  font-weight: bold;
+}
+
 .black {
   color: #151612;
 }
@@ -159,12 +163,9 @@ html {
   padding: 0 1rem;
 }
 
-/* .page-section h2,
-.page-section h3,
-.page-section p,
 .page-section ul {
-  padding: 0 1em;
-} */
+  margin-left: 1em;
+}
 
 .page-head {
   position: relative;

@@ -11,22 +11,6 @@ export default function Portfolio() {
         <>
             <main className="page-section">
                 <h1 className="page-head">Portfolio</h1>
-                <h2>Personal projects</h2>
-                {/* <p>None yet! But we're cooking!</p> */}
-                <div className={'portfolio-nav'}>
-                    <Link
-                        className="portfolio-navlink disabled"
-                        to={null}
-                    >
-                        Pokemon Go String Generator
-                    </Link>
-                    <Link
-                        className="portfolio-navlink disabled"
-                        to={null}
-                    >
-                        Blockally
-                    </Link>
-                </div>
                 <h3 className="disclaimer">DISCLAIMER: The below projects are hosted on separate Netlify sites, and are actively being rewritten as React apps that will be displayed/functional on this site, rather than their old Javascript versions. For the time being they will appear janky yet function as intended.</h3>
                 <h2>Scrimba projects</h2>
                 {/* Add the following:
@@ -66,6 +50,22 @@ export default function Portfolio() {
                     })}
                 </div>
                 <p>These may fall into above categories, but are smaller projects that can easily fit onto a page.</p>
+                <h2>In development</h2>
+                {/* <p>None yet! But we're cooking!</p> */}
+                <div className={'portfolio-nav'}>
+                    <Link
+                        className="portfolio-navlink disabled"
+                        to={null}
+                    >
+                        Pokemon Go String Generator
+                    </Link>
+                    <Link
+                        className="portfolio-navlink disabled"
+                        to={null}
+                    >
+                        Blockally
+                    </Link>
+                </div>
             </main>
         </>
     )
