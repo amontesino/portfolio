@@ -12,15 +12,15 @@ export default function Contact() {
                         <h1>Let's get in touch!</h1>
                         <p>I'd love to hear from you, whether it's to discuss projects, collaborations, or even if you have a coding question!</p>
                         <p>I can also be found on:</p>
-                        <div className='portf-link-container'>
+                        <div className='contact-link-container'>
                             <NavLink
-                                className="portf-link black"
+                                className="contact-link black"
                                 to="https://www.linkedin.com/in/armandomontesino98"
                             >
                                 LinkedIn
                             </NavLink>
                             <NavLink
-                                className="portf-link black"
+                                className="contact-link black"
                                 to="https://www.github.com/amontesino"
                             >
                                 Github

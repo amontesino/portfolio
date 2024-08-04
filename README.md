@@ -9,9 +9,6 @@ The site is currently minimal, but is functional in its purpose to both reach me
 ## Utilized frameworks/libraries
 
 -React (of course!)
-
 -React Router
-
 -Font Awesome
-
 -EmailJS

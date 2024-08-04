@@ -63,7 +63,7 @@ export default function Portfolio() {
                         className="portfolio-navlink disabled"
                         to={null}
                     >
-                        Blockally
+                        Karpy
                     </Link>
                 </div>
             </main>

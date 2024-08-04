@@ -9,7 +9,7 @@ export default function Header() {
             <Link className="header-name" to="/">
                 {/* <img src={null} /> */}
                 <FontAwesomeIcon icon={faHome} className='mobile-hidden' />
-                <h1 className="desktop-hidden">A. Montesino</h1>
+                <h1 className="desktop-hidden">Armando Montesino</h1>
             </Link>
             <hr className="rounded mobile-hidden" />
             <nav className="navlink-container">
