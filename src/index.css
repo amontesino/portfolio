@@ -20,7 +20,7 @@ html {
   right: 0;
   height: 5em;
   background: #151612;
-  border: 2px solid rgb(99, 99, 99);
+  border-bottom: 2px solid rgb(99, 99, 99);
   justify-content: space-between;
   align-items: center;
   padding: 0 1em;
@@ -171,7 +171,7 @@ html {
 }
 
 .body-link {
-  color: #5B9279;
+  color: #c561ff;
   text-shadow: 0;
   text-decoration: none;
 }
@@ -203,7 +203,8 @@ html {
   font-size: 1.8em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  background: #5B9279;
+  background: #1c002c;
+  border-bottom: 2px solid rgb(99, 99, 99);
   color: #ffffff;
   width: auto;
 }
@@ -212,7 +213,7 @@ html {
   min-height: 2.5rem;
   display: flex;
   align-items: center;
-  background: #8FCB9B;
+  background: #42135e;
   overflow: auto;
   white-space: nowrap;
   -ms-overflow-style: none;
@@ -228,7 +229,7 @@ html {
   padding: 0.2em 0.8em;
   text-decoration: none;
   font-weight: bold;
-  background: #5B9279;
+  background: #5a3072;
   border-radius: 5px;
   width: auto;
   color: #ffffff;
@@ -237,7 +238,7 @@ html {
 
 .portfolio-navlink:hover,
 .portfolio-navlink:active {
-  color: #8FCB9B;
+  color: #ac6bd1;
 }
 
 .rounded {
@@ -261,7 +262,7 @@ html {
 }
 
 .disclaimer {
-  color: rgb(165, 0, 0);
+  color: rgb(255, 0, 0);
   text-align: center;
 }
 
@@ -279,6 +280,7 @@ html {
     width: 6em;
     padding: 0;
     margin: 1em 1em 3em;
+    border: 2px solid rgb(99, 99, 99);
     border-radius: 3em;
   }
 
@@ -324,6 +326,8 @@ html {
   .page-head {
     margin-top: 0;
     border-radius: 0 0 0 1em;
+    border-left: 2px solid rgb(99, 99, 99);
+    border-bottom: 2px solid rgb(99, 99, 99);;
   }
 
   .portfolio-nav {
