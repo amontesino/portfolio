@@ -33,11 +33,12 @@ html {
 }
 
 .header-name {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .header-link,
-.portf-link {
+.portf-link,
+.contact-link {
   font-size: 1.5em;
   padding-left: 0.5em;
 }
@@ -45,7 +46,7 @@ html {
 .header-name:hover,
 .header-link:hover,
 .portf-link:hover {
-  color: #8d00df;
+  color: #9857bd;
   transition: color 1s;
 }
 
@@ -134,23 +135,28 @@ html {
 }
 
 .email-send {
-  color: #151612;
+  color: #EAE6E5;
   font-size: 1.5em;
   font-weight: bold;
-  background: #8FCB9B;
+  background: #5a3072;
   height: 2em;
   max-width: 4em;
   align-self: center;
 }
 
-.portf-link-container {
+.portf-link-container,
+.contact-link-container {
   display: flex;
   justify-content: space-evenly;
-  color: #151612;
   margin-bottom: 2em;
 }
 
 .portf-link {
+  color: #151612;
+}
+
+.portf-link,
+.contact-link {
   text-decoration: none;
 }
 
@@ -158,10 +164,6 @@ html {
 
 .strong {
   font-weight: bold;
-}
-
-.black {
-  color: #151612;
 }
 
 .header,
@@ -184,6 +186,7 @@ html {
 .page-section,
 .contact-page-section {
   padding-top: 3.7em;
+  padding-bottom: 2em;
 }
 
 .page-section p {
@@ -266,6 +269,18 @@ html {
   text-align: center;
 }
 
+/* Contact page */
+
+.contact-link {
+  color: #EAE6E5;
+  transition: color 1s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  color: #8d00df;
+}
+
 @media (min-width: 1366px) {
   .header {
     text-align: center;
@@ -306,8 +321,7 @@ html {
   .home-body {
     font-size: 3em;
     text-align: left;
-    margin-right: 30em;
-    width: 50%;
+    width: 30%;
   }
 
   .navlink-container {
