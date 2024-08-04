@@ -8,7 +8,7 @@ export default function About() {
                 <h1 className="page-head">About</h1>
                 <h2>Who am I?</h2>
                 <p>
-                    I'm <span className="strong">Armando Montesino.</span> I am a frontend developer with over a year of academic and amateur experience after leaving behind my Communications degrees. If you're looking to help me add "professional" to that list of adjectives, <NavLink className="paragraph-link" to="../contact">let's talk!</NavLink>
+                    I'm <span className="strong">Armando Montesino.</span> I am a frontend developer with over a year of academic and amateur experience after leaving behind my Communications degrees. If you're looking to help me add "professional" to that list of adjectives, <NavLink className="body-link" to="../contact">let's talk!</NavLink>
                 </p>
                 <h2>What Code + Communications Brings</h2>
                 <p>
