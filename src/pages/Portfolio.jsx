@@ -1,6 +1,7 @@
 import React from 'react'
 import { scrimProjList, smallProjList } from '../utils/portfolioList'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import AnimatedPage from '../AnimatedPage'
 
 
 export default function Portfolio() {
@@ -8,7 +9,7 @@ export default function Portfolio() {
     const small = new URLSearchParams(search).get('small')
 
     return (
-        <>
+        <AnimatedPage>
             <main className="page-section">
                 <h1 className="page-head">Portfolio</h1>
                 <h3 className="disclaimer">DISCLAIMER: The below projects are hosted on separate Netlify sites, and are actively being rewritten as React apps that will be displayed/functional on this site, rather than their old Javascript versions. For the time being they will appear janky yet function as intended.</h3>
@@ -67,6 +68,6 @@ export default function Portfolio() {
                     </Link>
                 </div>
             </main>
-        </>
+        </AnimatedPage>
     )
 }

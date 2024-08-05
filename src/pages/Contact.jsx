@@ -1,10 +1,11 @@
 import React from 'react'
 import Email from '../components/Email'
 import { NavLink } from 'react-router-dom'
+import AnimatedPage from '../AnimatedPage'
 
 export default function Contact() {
     return (
-        <>
+        <AnimatedPage>
             <main className="page-section">
                 <h1 className="page-head">Contact</h1>
                 <section className="email-and-info-container">
@@ -30,6 +31,6 @@ export default function Contact() {
                     <Email />
                 </section>
             </main>
-        </>
+        </AnimatedPage>
     )
 }

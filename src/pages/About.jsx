@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import AnimatedPage from '../AnimatedPage'
 
 export default function About() {
     return (
-        <>
+        <AnimatedPage>
             <main className="page-section">
                 <h1 className="page-head">About</h1>
                 <h2>Who am I?</h2>
@@ -34,6 +35,6 @@ export default function About() {
                     <li>Optimizing performance</li>
                 </ul>
             </main>
-        </>
+        </AnimatedPage>
     )
 }

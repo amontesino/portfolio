@@ -8,6 +8,7 @@ The site is currently minimal, but is functional in its purpose to both reach me
 
 ## TO-DO
 
+- [X] Animated Router Transitions
 - [ ] Hamburger Menu
 - [ ] Project Explanation Block when project is clicked
 - [ ] Light/Dark Mode Toggle
@@ -15,7 +16,10 @@ The site is currently minimal, but is functional in its purpose to both reach me
 
 ## Utilized frameworks/libraries
 
--React (of course!)
--React Router
--Font Awesome
--EmailJS
+- React (of course!)
+
+- React Router
+
+- Font Awesome
+
+- EmailJS
