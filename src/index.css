@@ -2,6 +2,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  min-height: 500px;
   font-family: "Radio Canada Big", sans-serif;
   background: rgb(15,0,24);
   background: -moz-linear-gradient(90deg, rgba(15,0,24,1) 0%, rgba(24,0,38,1) 100%);
@@ -72,6 +73,10 @@ html {
 
 /* Home page */
 
+.home {
+  height: 100%;
+}
+
 .js-text {
   background: rgb(255,253,186);
   background: -moz-linear-gradient(30deg, rgba(255,253,186,1) 0%, rgba(255,247,38,1) 35%, rgba(255,255,171,1) 100%);
@@ -96,6 +101,24 @@ html {
   margin-top: 48px;
   font-size: 2em;
   text-align: center;
+}
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 500px;
+  height: 500px;
+}
+
+.slideshow-slider {
+  white-space: nowrap;
+}
+
+.slide {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
 }
 
 /* Contact page */
