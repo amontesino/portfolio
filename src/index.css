@@ -7,7 +7,7 @@ html {
   background: rgb(15,0,24);
   background: -moz-linear-gradient(90deg, rgba(15,0,24,1) 0%, rgba(24,0,38,1) 100%);
   background: -webkit-linear-gradient(90deg, rgba(15,0,24,1) 0%, rgba(24,0,38,1) 100%);
-  background: linear-gradient(90deg, rgba(15,0,24,1) 0%, rgba(24,0,38,1) 100%);
+  background: linear-gradient(90deg, rgba(15,0,24,1) 0%, #180026 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0018",endColorstr="#180026",GradientType=1); 
   color: #EAE6E5;
 }
@@ -181,6 +181,18 @@ html {
 .portf-link,
 .contact-link {
   text-decoration: none;
+}
+
+/* About page */
+
+.techstack-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 100px 100px;
+	grid-template-columns: 100px 100px 100px;
+  gap: 30px;
+  width: 450px;
+  margin: 0;
 }
 
 /* General page stylings */
