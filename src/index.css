@@ -83,6 +83,7 @@ html {
   background: -webkit-linear-gradient(30deg, rgba(255,253,186,1) 0%, rgba(255,247,38,1) 35%, rgba(255,255,171,1) 100%);
   background: linear-gradient(30deg, rgba(255,253,186,1) 0%, rgba(255,247,38,1) 35%, rgba(255,255,171,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffdba",endColorstr="#ffffab",GradientType=1);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -93,6 +94,7 @@ html {
   background: -webkit-linear-gradient(90deg, rgba(144,255,240,1) 0%, rgba(133,213,244,1) 45%, rgba(70,252,221,1) 100%);
   background: linear-gradient(90deg, rgba(144,255,240,1) 0%, rgba(133,213,244,1) 45%, rgba(70,252,221,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#90fff0",endColorstr="#46fcdd",GradientType=1);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
