@@ -1,7 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import AnimatedPage from "../AnimatedPage";
-import { CssSVG, FirebaseSVG, HtmlSVG, JsSVG, ReactSVG, TsSVG } from "../assets/svg-icons";
+import {
+  CssSVG,
+  FirebaseSVG,
+  HtmlSVG,
+  JsSVG,
+  ReactSVG,
+  TsSVG,
+} from "../assets/svg-icons";
 
 export default function About() {
   return (
