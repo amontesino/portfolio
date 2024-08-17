@@ -412,8 +412,9 @@ html {
     flex-direction: column;
   }
 
-  .page-section {
-    padding: 0 0 0 8em;
+  .page-section,
+  .contact-page-section {
+    padding: 0 0 3em 8em;
   }
 
   .page-section p {
