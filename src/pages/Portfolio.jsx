@@ -1,7 +1,8 @@
 import React from 'react'
 import { scrimProjList, smallProjList } from '../utils/portfolioList'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import AnimatedPage from '../AnimatedPage'
+import PortfolioNav from '../components/PortfolioNav'
 
 
 export default function Portfolio() {
@@ -20,18 +21,9 @@ export default function Portfolio() {
                     -Movie Watchlist
                     -Restaurant Ordering-App
                     -Travel Journal */}
-                <div className={'portfolio-nav'}>
-                    {scrimProjList.map(proj => {
-                        return <Link
-                            className="portfolio-navlink"
-                            to={proj.pathName}
-                            // to={`../${proj.pathName}`}
-                            // add back later when projects are successfully ported to React
-                        >
-                            {proj.name}
-                        </Link>
-                    })}
-                </div>
+                <PortfolioNav 
+                    projectData={scrimProjList}
+                />
                 <p>These were projects that I made during my time in the <a className="body-link" href="https://scrimba.com">Scrimba bootcamp.</a> I highly recommend the service, you don't just get a balanced curriculum of HTML, CSS, JS and React, but you also get access to a wonderful community of fellow students and supportive leadership. The projects listed speak to both my skills as a developer and the quality of the Scrimba course material.</p>
                 <h2>Smaller components</h2>
                 {/* Add the following:
@@ -39,17 +31,9 @@ export default function Portfolio() {
                     -Color Scheme Generator
                     -Digital Business Card
                     -Basketball Scoreboard*/}
-                <div className="portfolio-nav">
-                    {smallProjList.map(proj => {
-                        return <NavLink
-                            className={`portfolio-navlink`}
-                            // to={`?small=${proj.queryName}`}
-                            to={proj.queryName}
-                        >
-                            {proj.name}
-                        </NavLink>
-                    })}
-                </div>
+                <PortfolioNav
+                    projectData={smallProjList}
+                />
                 <p>These may fall into above categories, but are smaller projects that can easily fit onto a page.</p>
                 <h2>In development</h2>
                 {/* <p>None yet! But we're cooking!</p> */}
