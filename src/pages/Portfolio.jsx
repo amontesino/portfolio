@@ -4,17 +4,13 @@ import { Link, useLocation } from 'react-router-dom'
 import AnimatedPage from '../AnimatedPage'
 import PortfolioNav from '../components/PortfolioNav'
 
-export const Expand = createContext()
 
 export default function Portfolio() {
     const { search } = useLocation()
     const small = new URLSearchParams(search).get('small')
 
-    const [expanded, setExpanded] = useState(false)
-
     return (
         <AnimatedPage>
-            <Expand.Provider value={expanded}>
                 <main className="page-section">
                     <h1 className="page-head">Portfolio</h1>
                     <h3 className="disclaimer">DISCLAIMER: The below projects are hosted on separate Netlify sites, and are actively being rewritten as React apps that will be displayed/functional on this site, rather than their old Javascript versions. For the time being they will appear janky yet function as intended.</h3>
@@ -26,7 +22,6 @@ export default function Portfolio() {
                         -Restaurant Ordering-App
                         -Travel Journal */}
                     <PortfolioNav
-                        onClick={() => setExpanded(prevExpand => !prevExpand)}
                         projectData={scrimProjList}
                     />
                     <p>These were projects that I made during my time in the <a className="body-link" href="https://scrimba.com">Scrimba bootcamp.</a> I highly recommend the service, you don't just get a balanced curriculum of HTML, CSS, JS and React, but you also get access to a wonderful community of fellow students and supportive leadership. The projects listed speak to both my skills as a developer and the quality of the Scrimba course material.</p>
@@ -57,7 +52,6 @@ export default function Portfolio() {
                         </Link>
                     </div>
                 </main>
-            </Expand.Provider>
         </AnimatedPage>
     )
 }

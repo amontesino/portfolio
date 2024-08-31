@@ -1,13 +1,21 @@
-import { useContext, useState } from "react"
-import { Expand } from "../pages/Portfolio"
+import { useState } from "react"
 
 export default function PortfolioNav(props) {
-    let expand = useContext(Expand)
+    const [expanded, setExpanded] = useState({
+        state: false,
+        projectIndex: -1
+    })
+
+    function ExpandedContent(text) {
+        return (
+            <p>{text}</p>
+        )
+    }
 
     return (
         <>
             <div className={'portfolio-nav'}>
-                {props.projectData.map(proj => {
+                {props.projectData.map((proj, index) => {
                     // return <Link
                     //     className="portfolio-navlink"
                     //     to={proj.pathName}
@@ -18,13 +26,20 @@ export default function PortfolioNav(props) {
                     // </Link>
                     return <button
                         className="portfolio-navlink"
-                        onClick={props.onClick}
+                        // onClick={() => setExpanded({
+                        //     state: true,
+                        //     projectIndex: index
+                        // })}
+                        onClick={() => {
+                            if (expanded.state) setExpanded({state: false, projectIndex: null})
+                            else setExpanded({state: true, projectIndex: index})
+                        }}
                     >
                         {proj.name}
                     </button>
                 })}
             </div>
-            {expand ? "expanded" : null}
+            {expanded.state ? "yes" : null}
         </>
     )
 }
