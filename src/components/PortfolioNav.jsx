@@ -6,9 +6,9 @@ export default function PortfolioNav(props) {
         projectIndex: -1
     })
 
-    function ExpandedContent(text) {
+    function ExpandedContent(props) {
         return (
-            <p>{text}</p>
+            <p>{props.text}</p>
         )
     }
 
@@ -39,7 +39,7 @@ export default function PortfolioNav(props) {
                     </button>
                 })}
             </div>
-            {expanded.state ? "yes" : null}
+            {expanded.state ? <ExpandedContent text={props.projectData[expanded.projectIndex].description} /> : null}
         </>
     )
 }

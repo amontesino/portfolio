@@ -11,16 +11,19 @@ export const scrimProjList = [
     // },
     {
         name: 'Movie Watchlist',
+        description: "movie watchlist",
         componentName: 'MovieWatchlist',
         pathName: 'https://am98-movie-watchlist.netlify.app/'
     },
     {
         name: 'Restaurant Ordering App',
+        description: "ordering app",
         componentName: 'RestaurantOrdering',
         pathName: 'https://splendorous-fudge-8ab13d.netlify.app/'
     },
     {
         name: 'Travel Journal',
+        description: "travel journal",
         componentName: 'TravelJournal',
         pathName: 'https://dapper-fox-8d3c62.netlify.app/'
     },
