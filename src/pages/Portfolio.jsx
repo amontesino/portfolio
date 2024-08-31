@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 import AnimatedPage from '../AnimatedPage'
 import PortfolioNav from '../components/PortfolioNav'
 
-export const Expand = createContext()
+export const Expand = createContext(false)
 
 export default function Portfolio() {
     const { search } = useLocation()
@@ -12,7 +12,7 @@ export default function Portfolio() {
 
     return (
         <AnimatedPage>
-            <Expand.Provider>
+            <Expand.Provider value={Expand}>
                 <main className="page-section">
                     <h1 className="page-head">Portfolio</h1>
                     <h3 className="disclaimer">DISCLAIMER: The below projects are hosted on separate Netlify sites, and are actively being rewritten as React apps that will be displayed/functional on this site, rather than their old Javascript versions. For the time being they will appear janky yet function as intended.</h3>
