@@ -1,5 +1,4 @@
 import { useContext, useState } from "react"
-import { Link } from "react-router-dom"
 import { Expand } from "../pages/Portfolio"
 
 export default function PortfolioNav(props) {
@@ -19,7 +18,7 @@ export default function PortfolioNav(props) {
                     // </Link>
                     return <button
                         className="portfolio-navlink"
-                        onClick={() => (expand = !expand)}
+                        onClick={props.onClick}
                     >
                         {proj.name}
                     </button>
