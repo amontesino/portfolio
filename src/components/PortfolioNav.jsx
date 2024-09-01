@@ -6,6 +6,14 @@ export default function PortfolioNav(props) {
         projectIndex: -1
     })
 
+    function checkExpansion(index) {
+        if (expanded.state) {
+            if (index != expanded.projectIndex) setExpanded({state: true, projectIndex: index})
+            else setExpanded({state: false, projectIndex: null})
+        }
+        else setExpanded({state: true, projectIndex: index})
+    }
+
     function ExpandedContent(props) {
         return (
             <p>{props.text}</p>
@@ -30,10 +38,7 @@ export default function PortfolioNav(props) {
                         //     state: true,
                         //     projectIndex: index
                         // })}
-                        onClick={() => {
-                            if (expanded.state) setExpanded({state: false, projectIndex: null})
-                            else setExpanded({state: true, projectIndex: index})
-                        }}
+                        onClick={() => checkExpansion(index)}
                     >
                         {proj.name}
                     </button>
