@@ -347,6 +347,15 @@ html {
   text-align: center;
 }
 
+.project-information {
+  background: #42135e;
+  padding-top: 0;
+}
+
+.project-info-header {
+  margin-top: 0;
+}
+
 /* Contact page */
 
 .contact-link {
