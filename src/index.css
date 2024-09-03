@@ -237,8 +237,37 @@ html {
 
 /* General page stylings */
 
+.center {
+  text-align: center;
+}
+
 .strong {
   font-weight: bold;
+}
+
+.rounded {
+  margin: 8px 0;
+  width: 3em;
+  border-top: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.disabled {
+  color: #d4d4d4;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  color: #d4d4d4;
+}
+
+.disclaimer {
+  color: #919191;
+  text-align: center;
 }
 
 .header,
@@ -287,6 +316,8 @@ html {
   width: auto;
 }
 
+/* Portfolio */
+
 .portfolio-nav {
   min-height: 2.5rem;
   display: flex;
@@ -308,6 +339,9 @@ html {
   text-decoration: none;
   font-weight: bold;
   background: #5a3072;
+  border: 0;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 1em;
   border-radius: 5px;
   width: auto;
   color: #ffffff;
@@ -319,29 +353,21 @@ html {
   color: #ac6bd1;
 }
 
-.rounded {
-  margin: 8px 0;
-  width: 3em;
-  border-top: 2px solid #fff;
-  border-radius: 2px;
+.project-information {
+  background: #42135e;
+  padding-top: 0;
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 0.5em;
 }
 
-.mobile-hidden {
-  display: none;
-}
-
-.disabled {
-  color: #d4d4d4;
-  cursor: not-allowed;
-}
-
-.disabled:hover {
-  color: #d4d4d4;
-}
-
-.disclaimer {
-  color: #919191;
+.project-info-header {
+  margin-top: 0;
+  padding-top: 0.5em;
   text-align: center;
+}
+
+.project-info-image {
+  width: 100%;
 }
 
 /* Contact page */
@@ -430,6 +456,24 @@ html {
 
   .portfolio-nav {
     border-radius: 5px 0 0 5px;
+  }
+
+  .project-info-header {
+    text-align: left;
+  }
+
+  .project-info-image {
+    max-height: 25em;
+    width: auto;
+  }
+
+  .proj-info-flex {
+    display: flex;
+  }
+
+  .proj-info-text {
+    font-size: 1.2em;
+    margin-left: 2em;
   }
 
   .email-and-info-container {
