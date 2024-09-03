@@ -11,7 +11,7 @@ The site is currently minimal, but is functional in its purpose to both reach me
 - [x] Animated Router Transitions
 - [x] SVGs for About list + Contact social media links
 - [ ] Hamburger Menu
-- [ ] Project Explanation Block when project is clicked
+- [X] Project Explanation Block when project is clicked
 - [ ] Light/Dark Mode Toggle
 - [ ] React ReFactors of Older Projects
 
