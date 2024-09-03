@@ -471,6 +471,11 @@ html {
     display: flex;
   }
 
+  .proj-info-text {
+    font-size: 1.2em;
+    margin-left: 2em;
+  }
+
   .email-and-info-container {
     display: flex;
   }

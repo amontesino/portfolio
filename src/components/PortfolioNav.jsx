@@ -21,8 +21,10 @@ export default function PortfolioNav(props) {
                 <h1 className="project-info-header">{props.projData.name}</h1>
                 <div className="proj-info-flex">
                     <img className="project-info-image" src={`${props.projData.image}`}/>
-                    <p>{props.projData.description}</p>
-                    <a className="body-link center" href={props.projData.pathName}>Check it out here!</a>
+                    <div className="proj-info-text">
+                        <p>{props.projData.description}</p>
+                        <a className="body-link center" href={props.projData.pathName}>Check it out here!</a>
+                    </div>
                 </div>
             </motion.div>
         )
