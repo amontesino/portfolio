@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import AnimatedPage from "../AnimatedPage";
+import { ThemeContext } from "../App";
 
 export default function Home() {
+
+  const theme = useContext(ThemeContext)
+
   return (
     <AnimatedPage>
       <main className="page-section home">

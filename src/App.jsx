@@ -14,6 +14,8 @@ import Layout from "./components/Layout";
 import { AnimatePresence } from "framer-motion";
 import { createContext } from "react";
 
+export const ThemeContext = createContext()
+
 const router = createBrowserRouter([{ path: "*", element: <Root /> }]);
 
 function App() {
@@ -22,8 +24,6 @@ function App() {
 
 function Root() {
   const location = useLocation();
-
-  const ThemeContext = createContext()
 
   return (
     <AnimatePresence mode="wait">
