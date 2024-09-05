@@ -1,18 +1,18 @@
 import React, { useContext } from "react";
 import AnimatedPage from "../AnimatedPage";
-import { ThemeContext } from "../App";
+import { LightModeContext } from "../context/LightModeContext";
 
 export default function Home() {
-
-  const theme = useContext(ThemeContext)
+  const {lightMode} = useContext(LightModeContext)
+  const themeCheck = lightMode ? "light" : null
 
   return (
     <AnimatedPage>
-      <main className="page-section home">
-        <h2 className="home-head mobile-hidden">Armando Montesino</h2>
-        <h2 className="home-body">
-          A front end <span className="js-text">JavaScript</span> developer
-          specializing in <span className="react-text">React.</span>
+      <main className={`page-section home ${themeCheck}`}>
+        <h2 className={`home-head mobile-hidden ${themeCheck}`}>Armando Montesino</h2>
+        <h2 className={`home-body ${themeCheck}`}>
+          A front end <span className={`js-text ${themeCheck}`}>JavaScript</span> developer
+          specializing in <span className={`react-text ${themeCheck}`}>React.</span>
         </h2>
       </main>
     </AnimatedPage>

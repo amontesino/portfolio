@@ -390,6 +390,15 @@ html {
   border: 0.5px solid #919191;
 }
 
+/* Light mode */
+
+.page-section.light {
+  background: rgb(220, 183, 237);
+  color: black;
+}
+
+/* Desktop stylings */
+
 @media (min-width: 1366px) {
   .header {
     text-align: center;
