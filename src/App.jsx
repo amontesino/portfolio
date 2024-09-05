@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Layout from "./components/Layout";
 import { AnimatePresence } from "framer-motion";
+import { createContext } from "react";
 
 const router = createBrowserRouter([{ path: "*", element: <Root /> }]);
 
@@ -22,16 +23,20 @@ function App() {
 function Root() {
   const location = useLocation();
 
+  const ThemeContext = createContext()
+
   return (
     <AnimatePresence mode="wait">
-      <Routes key={location.pathname} location={location}>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
+      <ThemeContext.Provider value="dark">
+        <Routes key={location.pathname} location={location}>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+          </Route>
+        </Routes>
+      </ThemeContext.Provider>
     </AnimatePresence>
   );
 }
