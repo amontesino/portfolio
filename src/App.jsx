@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Layout from "./components/Layout";
 import { AnimatePresence } from "framer-motion";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([{ path: "*", element: <Root /> }]);
 
@@ -31,6 +32,7 @@ function Root() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
         </Route>
+        <Route path ="*" element={<NotFound />}></Route>
       </Routes>
     </AnimatePresence>
   );

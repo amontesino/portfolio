@@ -390,6 +390,36 @@ html {
   border: 0.5px solid #919191;
 }
 
+/* 404 / not found page */
+
+.not-found-header {
+  z-index: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0;
+  font-size: 12em;
+  line-height: 0.7em;
+  color: rgb(46, 20, 46);
+}
+
+.not-found-text-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-h2 {
+  font-size: 2em;
+  margin: 0.2em;
+}
+
+.not-found-link {
+  font-size: 1.5em;
+}
+
 @media (min-width: 1366px) {
   .header {
     text-align: center;
@@ -499,5 +529,14 @@ html {
 
   .desktop-hidden {
     display: none;
+  }
+
+  .not-found-h2 {
+    font-size: 4em;
+    margin: 0.2em;
+  }
+  
+  .not-found-link {
+    font-size: 2.5em;
   }
 }
