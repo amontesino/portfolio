@@ -231,7 +231,7 @@ html {
   grid-template-rows: 100px 100px;
   grid-template-columns: 100px 100px 100px;
   gap: 10px;
-  width: 450px;
+  max-width: 100vh;
   margin: 0;
 }
 
