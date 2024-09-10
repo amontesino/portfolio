@@ -394,16 +394,18 @@ html {
 
 .not-found-header {
   z-index: 0;
-  position: fixed;
+  user-select: none;
+  position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   margin: 0;
-  font-size: 12em;
+  font-size: 10em;
   line-height: 0.7em;
   color: rgb(46, 20, 46);
 }
 
 .not-found-text-container {
+  z-index: 1;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -529,6 +531,11 @@ html {
 
   .desktop-hidden {
     display: none;
+  }
+
+  .not-found-header {
+    top: 0;
+    font-size: 30em;
   }
 
   .not-found-h2 {
