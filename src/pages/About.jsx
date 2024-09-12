@@ -8,6 +8,7 @@ import {
   JsSVG,
   ReactSVG,
   TsSVG,
+  VueSVG,
 } from "../assets/svg-icons";
 
 export default function About() {
@@ -56,6 +57,9 @@ export default function About() {
           </li>
           <li>
             <FirebaseSVG />
+          </li>
+          <li>
+            <VueSVG />
           </li>
         </ul>
         <p>as well as being an avid proponent of these concepts:</p>
