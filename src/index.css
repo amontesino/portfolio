@@ -50,13 +50,13 @@ html {
 .contact-link {
   font-size: 1.5em;
   padding-left: 0.5em;
+  transition: 1s;
 }
 
 .header-name:hover,
 .header-link:hover,
 .portf-link:hover {
   color: #9857bd;
-  transition: color 1s;
 }
 
 /* Footer */
