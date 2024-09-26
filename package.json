@@ -19,7 +19,7 @@
     "g": "^2.0.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
-    "netlify-cli": "^17.33.5",
+    "netlify-cli": "^17.36.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
