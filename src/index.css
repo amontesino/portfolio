@@ -490,6 +490,10 @@ html {
     border-radius: 5px 0 0 5px;
   }
 
+  .desktop-pointer {
+    cursor: pointer;
+  }
+
   .project-info-header {
     text-align: left;
   }

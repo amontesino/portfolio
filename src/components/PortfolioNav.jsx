@@ -47,7 +47,7 @@ export default function PortfolioNav(props) {
                     //     {proj.name}
                     // </Link>
                     return <button
-                        className="portfolio-navlink"
+                        className="portfolio-navlink desktop-pointer"
                         // onClick={() => setExpanded({
                         //     state: true,
                         //     projectIndex: index
