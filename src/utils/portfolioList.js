@@ -51,7 +51,7 @@ export const scrimProjList = [
     },
     {
         name: 'Password Generator',
-        description: "This is an intermediate JavaScript project utilizing DOM manipulation and event listeners, rendering passwords based on settings configured by the user.",
+        description: "This is an intermediate JavaScript project utilizing DOM manipulation and event listeners, rendering passwords based on settings configured by the user. Since then, it has been refactored to React, and full features and proper mobile styling have been added.",
         image: "/slideshow-images/passgen-screen.png",
         altText: "A screenshot of the password generator project, in which you use a button to generate two passwords.",
         // componentName: 'PasswordGenerator',
