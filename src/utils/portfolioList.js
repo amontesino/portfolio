@@ -47,7 +47,7 @@ export const scrimProjList = [
         image: "/portfolio-images/ordering-screen.png",
         altText: "A screenshot of the Restaurant Ordering project, showing a header, a meny with add buttons, and an order list with a total.",
         componentName: 'RestaurantOrdering',
-        pathName: 'https://splendorous-fudge-8ab13d.netlify.app/'
+        pathName: 'https://courageous-kashata-009f79.netlify.app/'
     },
     {
         name: 'Password Generator',
