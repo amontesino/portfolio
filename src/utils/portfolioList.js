@@ -27,9 +27,9 @@ export const scrimProjList = [
     },
     {
         name: 'Movie Watchlist',
-        description: "The purpose of this project was to demonstrate my knowledge with APIs. This particular project used the free OMDB API.",
+        description: "The purpose of this project was to demonstrate my knowledge with APIs. This particular project used the free OMDB API, which is limited to 1000 queries a day. Since then, I have refactored the project from vanilla JavaScript to the React framework, along with redefining CSS to have rules better aligning assets in the movie container, as well as responsive design for mobile layouts. This refactor re-taught me a lot about using Promise objects to make sure one Fetch function runs after the other is complete, and it also reminded me of the great importance that is error logging to pin down where exactly an app breaks.",
         image: '/portfolio-images/watchlist-screen.png',
-        altText: "A screenshot previewing the Movie Watchlist project, with a header component, a results section displaying query results for the movie Knives Out, and a search bar fixed between the two.",
+        altText: "A screenshot previewing the Movie Watchlist project, with a header component, a saved watchlist section displaying the movies Your Monster, Evangelion 1.0, and The Wild Robot, with accompanying information such as runtime and plot.",
         componentName: 'MovieWatchlist',
         pathName: 'https://am98-movie-watchlist.netlify.app/'
     },
