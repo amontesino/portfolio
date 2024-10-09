@@ -1,6 +1,5 @@
-import React from "react";
 import Email from "../components/Email";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import AnimatedPage from "../AnimatedPage";
 import { GitHubSVG, LinkedInSVG } from "../assets/svg-icons";
 

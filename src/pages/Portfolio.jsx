@@ -1,13 +1,9 @@
-import React, { createContext, useState } from 'react'
 import { scrimProjList } from '../utils/portfolioList'
-import { Link, useLocation } from 'react-router-dom'
 import AnimatedPage from '../AnimatedPage'
 import PortfolioNav from '../components/PortfolioNav'
 
 
 export default function Portfolio() {
-    const { search } = useLocation()
-    const small = new URLSearchParams(search).get('small')
 
     return (
         <AnimatedPage>

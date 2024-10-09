@@ -1,4 +1,3 @@
-import React from "react";
 import AnimatedPage from "../AnimatedPage";
 
 export default function Home() {
