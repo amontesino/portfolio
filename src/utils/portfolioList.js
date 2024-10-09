@@ -35,7 +35,7 @@ export const scrimProjList = [
     },
     {
         name: 'Color Scheme Generator',
-        description: "This project exemplifies usage of queries in API calls to generate color schemes according to the user-controlled color selector.",
+        description: "This project exemplifies usage of queries in API calls to generate color schemes according to the user-controlled color selector. Since the completion of the Scrimba bootcamp, I have refactored this project into React, factoring in responsive design principles.",
         image: "/portfolio-images/colorgen-screen.png",
         altText: "A screenshot previewing the color scheme generator project, with an Analogic color scheme generated from a purple hue, with 5 colors generated.",
         // componentName: 'ColorScheme',

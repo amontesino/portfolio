@@ -20,6 +20,24 @@ html {
   color: #eae6e5;
 }
 
+body.light-mode,
+html.light-mode {
+  background: rgb(240, 240, 245);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(240, 240, 245, 1) 0%,
+    rgba(220, 220, 230, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(240, 240, 245, 1) 0%,
+    rgba(220, 220, 230, 1) 100%
+  );
+  background: linear-gradient(90deg, rgba(240, 240, 245, 1) 0%, #dcdce6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f5",endColorstr="#dcdce6",GradientType=1);
+  color: #333333;
+}
+
 /* Header */
 
 .header {
@@ -35,10 +53,20 @@ html {
   padding: 0 1em;
 }
 
+.light-mode .header {
+  background: #f0f0f0;
+  border-bottom: 2px solid #cccccc;
+}
+
 .header-name,
 .header-link {
   color: #fff;
   text-decoration: none;
+}
+
+.light-mode .header-name,
+.light-mode .header-link {
+  color: #333333;
 }
 
 .header-name {
@@ -59,6 +87,12 @@ html {
   color: #9857bd;
 }
 
+.light-mode .header-name:hover,
+.light-mode .header-link:hover,
+.light-mode .portf-link:hover {
+  color: #6a3d8f;
+}
+
 /* Footer */
 
 .footer {
@@ -73,6 +107,12 @@ html {
   height: 2em;
   border-top: 2px solid rgb(99, 99, 99);
   background: #151612;
+}
+
+.light-mode .footer {
+  color: #333333;
+  border-top: 2px solid #cccccc;
+  background: #f0f0f0;
 }
 
 .footer img {
@@ -173,6 +213,12 @@ html {
   border-radius: 10px;
 }
 
+.light-mode .email-small-field,
+.light-mode .email-message,
+.light-mode .email-send {
+  box-shadow: 0 1px 1px #999999;
+}
+
 .email-form {
   display: flex;
   flex-direction: column;
@@ -207,6 +253,11 @@ html {
   align-self: center;
 }
 
+.light-mode .email-send {
+  color: #ffffff;
+  background: #7a4092;
+}
+
 .portf-link-container,
 .contact-link-container {
   display: flex;
@@ -216,6 +267,10 @@ html {
 
 .portf-link {
   color: #151612;
+}
+
+.light-mode .portf-link {
+  color: #333333;
 }
 
 .portf-link,
@@ -252,6 +307,10 @@ html {
   border-radius: 2px;
 }
 
+.light-mode .rounded {
+  border-top: 2px solid #333333;
+}
+
 .mobile-hidden {
   display: none;
 }
@@ -261,13 +320,25 @@ html {
   cursor: not-allowed;
 }
 
+.light-mode .disabled {
+  color: #999999;
+}
+
 .disabled:hover {
   color: #d4d4d4;
+}
+
+.light-mode .disabled:hover {
+  color: #999999;
 }
 
 .disclaimer {
   color: #919191;
   text-align: center;
+}
+
+.light-mode .disclaimer {
+  color: #666666;
 }
 
 .header,
@@ -282,9 +353,17 @@ html {
   text-decoration: none;
 }
 
+.light-mode .body-link {
+  color: #8a00e6;
+}
+
 .body-link:hover {
   text-shadow: 0 1px 5px #8b8b8b;
   transition: text-shadow 1s;
+}
+
+.light-mode .body-link:hover {
+  text-shadow: 0 1px 5px #cccccc;
 }
 
 .page-section,
@@ -316,6 +395,12 @@ html {
   width: auto;
 }
 
+.light-mode .page-head {
+  background: #e6e6e6;
+  border-bottom: 2px solid #cccccc;
+  color: #333333;
+}
+
 /* Portfolio */
 
 .portfolio-nav {
@@ -327,6 +412,10 @@ html {
   white-space: nowrap;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.light-mode .portfolio-nav {
+  background: #d9c2e6;
 }
 
 .portfolio-nav::-webkit-scrollbar {
@@ -348,9 +437,19 @@ html {
   transition: color 1s;
 }
 
+.light-mode .portfolio-navlink {
+  background: #9966cc;
+  color: #ffffff;
+}
+
 .portfolio-navlink:hover,
 .portfolio-navlink:active {
   color: #ac6bd1;
+}
+
+.light-mode .portfolio-navlink:hover,
+.light-mode .portfolio-navlink:active {
+  color: #e6ccff;
 }
 
 .project-information {
@@ -358,6 +457,10 @@ html {
   padding-top: 0;
   border-radius: 0 0 20px 20px;
   padding-bottom: 0.5em;
+}
+
+.light-mode .project-information {
+  background: #d9c2e6;
 }
 
 .project-info-header {
@@ -377,9 +480,18 @@ html {
   transition: color 1s;
 }
 
+.light-mode .contact-link {
+  color: #333333;
+}
+
 .contact-link:hover,
 .contact-link:active {
   color: #8d00df;
+}
+
+.light-mode .contact-link:hover,
+.light-mode .contact-link:active {
+  color: #6600a3;
 }
 
 .email-small-field,
@@ -388,6 +500,13 @@ html {
   color: white;
   box-shadow: none;
   border: 0.5px solid #919191;
+}
+
+.light-mode .email-small-field,
+.light-mode .email-message {
+  background: #ffffff;
+  color: #333333;
+  border: 0.5px solid #cccccc;
 }
 
 /* 404 / not found page */
@@ -402,6 +521,10 @@ html {
   font-size: 10em;
   line-height: 0.7em;
   color: rgb(46, 20, 46);
+}
+
+.light-mode .not-found-header {
+  color: rgb(220, 200, 220);
 }
 
 .not-found-text-container {
@@ -438,6 +561,10 @@ html {
     margin: 1em 1em 3em;
     border: 2px solid rgb(99, 99, 99);
     border-radius: 3em;
+  }
+
+  .light-mode .header {
+    border: 2px solid #cccccc;
   }
 
   .header-name,
@@ -484,6 +611,11 @@ html {
     border-radius: 0 0 0 1em;
     border-left: 2px solid rgb(99, 99, 99);
     border-bottom: 2px solid rgb(99, 99, 99);
+  }
+
+  .light-mode .page-head {
+    border-left: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
   }
 
   .portfolio-nav {
