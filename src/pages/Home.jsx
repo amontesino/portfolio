@@ -6,8 +6,8 @@ export default function Home() {
       <main className="page-section home">
         <h2 className="home-head mobile-hidden">Armando Montesino</h2>
         <h2 className="home-body">
-          A front end <span className="js-text">JavaScript</span> developer
-          specializing in <span className="react-text">React.</span>
+          A fullstack <span className="react-text">React</span> developer
+          with a constantly evolving skillset.
         </h2>
       </main>
     </AnimatedPage>
