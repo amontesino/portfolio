@@ -4,7 +4,9 @@ import {
   CssSVG,
   FirebaseSVG,
   HtmlSVG,
+  JavaSVG,
   JsSVG,
+  PostgreSVG,
   ReactSVG,
   TsSVG,
   VueSVG,
@@ -59,6 +61,12 @@ export default function About() {
           </li>
           <li>
             <VueSVG />
+          </li>
+          <li>
+            <JavaSVG />
+          </li>
+          <li>
+            <PostgreSVG />
           </li>
         </ul>
         <p>as well as being an avid proponent of these concepts:</p>
